@@ -7,13 +7,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class BaseBloc extends Cubit<BaseBlocState> {
   BaseBloc() : super(BaseBlocInit());
 
-  BaseBlocOption option() => BaseBlocOption();
+  BaseBlocOption get option => BaseBlocOption();
 
   @protected
-  void onLoading() => emit(BaseBlocLoading());
+  void onBaseLoading() => emit(BaseBlocLoading());
 
   @protected
-  void onLoaded() => emit(BaseBlocLoaded());
+  void onBaseLoaded() => emit(BaseBlocLoaded());
 
   @protected
   void onBaseError(BaseErrorModel error) => emit(BaseBlocError(error));

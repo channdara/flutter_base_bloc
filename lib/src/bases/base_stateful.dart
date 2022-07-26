@@ -2,9 +2,9 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/widgets.dart';
 
 abstract class BaseStateful<S extends StatefulWidget> extends State<S> {
-  void baseInitState();
+  void baseInitState() {}
 
-  void baseDispose();
+  void baseDispose() {}
 
   @override
   void initState() {
